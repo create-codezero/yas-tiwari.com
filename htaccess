@@ -1,0 +1,9 @@
+ErrorDocument 400 http://www.yastiwari.com/error
+ErrorDocument 401 http://www.yastiwari.com/error
+ErrorDocument 403 http://www.yastiwari.com/error
+ErrorDocument 404 http://www.yastiwari.com/error
+ErrorDocument 503 http://www.yastiwari.com/error
+RewriteEngine On
+RewriteCond %{HTTP_HOST} ^yastiwari\.com [NC]
+RewriteCond %{SERVER_PORT} 80
+RewriteRule ^(.*)$ https://www.yastiwari.com/$1 [R,L]
