@@ -1,0 +1,12 @@
+@import './variables';
+
+@media only screen and (max-width:800px) {
+     #watch-video-page{
+     flex-direction: column;
+     }
+
+     #watch-video-page > div{
+          max-width: 100% !important;
+          width: 97% !important;
+     }
+}
