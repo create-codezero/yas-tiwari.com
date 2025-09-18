@@ -147,8 +147,8 @@ if (isset($_POST['sendEmails'])) {
                $mail->isSMTP();
                $mail->Host       = 'smtp.gmail.com';
                $mail->SMTPAuth   = true;
-               $mail->Username   = 'website.yastiwari@gmail.com';
-               $mail->Password   = 'gvipjlgrcfujaztm';
+               $mail->Username   = 'smtp_email';
+               $mail->Password   = 'smtp_password';
                $mail->SMTPSecure = 'tls';
                $mail->Port       = 587;
 
@@ -314,3 +314,4 @@ if (isset($_POST['sendEmails'])) {
           $timeProcessed++;
      }
 }
+
