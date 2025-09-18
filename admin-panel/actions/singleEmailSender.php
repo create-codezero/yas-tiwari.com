@@ -30,8 +30,8 @@ if (isset($_POST['mailto']) && isset($_SESSION['emailList']) && isset($_SESSION[
           $mail->isSMTP();
           $mail->Host       = 'smtp.gmail.com';
           $mail->SMTPAuth   = true;
-          $mail->Username   = 'website.yastiwari@gmail.com';
-          $mail->Password   = 'gvipjlgrcfujaztm';
+          $mail->Username   = 'smtp_email';
+          $mail->Password   = 'smtp_email_password';
           $mail->SMTPSecure = 'tls';
           $mail->Port       = 587;
 
@@ -52,3 +52,4 @@ if (isset($_POST['mailto']) && isset($_SESSION['emailList']) && isset($_SESSION[
           echo 0;
      }
 }
+
